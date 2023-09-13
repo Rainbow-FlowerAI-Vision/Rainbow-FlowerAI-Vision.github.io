@@ -216,9 +216,10 @@ input, select, textarea {
 			z-index: -1;
 			background-attachment: fixed;
 			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), url("../../images/big.jpg");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
+			filter: brightness(50%);
 		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2193,12 +2194,16 @@ input, select, textarea {
 			position: relative;
 			min-width: 10rem;
 		}
-
+			/*
 			.panel > *.color0 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
 				background-size: 128px 128px, auto;
 			}
-
+			*/
+			.panel > *.color0 {
+				background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+				background-size: 128px 128px auto;
+			}
 			.panel > *.color1 {
 				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
 				background-size: 128px 128px, auto;
